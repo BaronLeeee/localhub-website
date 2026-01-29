@@ -32,13 +32,14 @@
     </ul>
 
     <h2>3. Permissions Usage</h2>
-    <p>The App requests the following permissions only when necessary, and you can revoke them at any time in system settings:</p>
+    <p>The App requests the following permissions only when necessary for core functionality:</p>
     <ul>
-        <li><strong>Storage/Media Access:</strong> Used to read files you choose to share or save received files to your device.</li>
-        <li><strong>Network Permissions:</strong> Used to create local network services and perform network communications.</li>
-        <li><strong>Camera and Microphone:</strong> Requested only when you actively use the "Camera Stream" feature to capture video and audio for real-time transmission.</li>
-        <li><strong>Screen Recording (MediaProjection):</strong> Requested only when you actively use the "Screen Share" feature.</li>
-        <li><strong>Notification Permission:</strong> Used to display file transfer progress and service running status notifications.</li>
+        <li><strong>Camera:</strong> Required for the "Camera Stream" feature, allowing you to stream your device's camera feed to other devices on your local network in real-time. We do not record or save your camera data.</li>
+        <li><strong>Microphone:</strong> Required for the "Camera Stream" feature if you choose to stream audio along with video.</li>
+        <li><strong>Storage (Photos/Media/Files):</strong> Required to allow you to select files to share and to save files received from other devices.</li>
+        <li><strong>Notifications:</strong> Used to show the server running status and upload progress in the notification bar, ensuring the service keeps running in the background.</li>
+        <li><strong>Foreground Service & Screen Recording:</strong> Used for screen casting feature to capture screen content and stream it to connected devices.</li>
+        <li><strong>Location / Nearby Devices:</strong> Required only to configure the local hotspot or manage Wi-Fi connections (depending on Android version). We do not collect or track your geographical location.</li>
     </ul>
 
     <h2>4. Third-Party Services</h2>
