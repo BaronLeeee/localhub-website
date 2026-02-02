@@ -12,55 +12,82 @@
         ul { padding-left: 20px; }
         li { margin-bottom: 8px; }
         .contact { background: #f8f9fa; padding: 15px; border-radius: 5px; margin-top: 30px; }
+        .lang-selector { margin-bottom: 20px; padding: 10px; background: #eee; border-radius: 5px; text-align: center; }
     </style>
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p><strong>Effective Date:</strong> January 16, 2026</p>
+    <p><strong>Effective Date:</strong> February 1, 2026</p>
     
     <p>This Privacy Policy applies to the "LocalHub" application (hereinafter referred to as "the App") developed by independent developer Baron Lee. We value your privacy, and this policy aims to explain how we collect, use, and protect your information.</p>
 
-    <h2>1. Core Commitment: Local First</h2>
+    <div class="lang-selector">
+        <a href="#en">English</a> | <a href="#zh">中文</a>
+    </div>
+
+    <h2 id="en">English Version</h2>
+    
+    <h3>1. Core Commitment: Local First</h3>
     <p>LocalHub is a tool for sharing files and media over a local network. <strong>Unless you actively choose to do so (e.g., sharing a link with others), your files, photos, videos, and other personal data are stored only on your local device and will never be uploaded to any cloud servers by us.</strong></p>
 
-    <h2>2. Information We Collect and How We Use It</h2>
+    <h3>2. Information We Collect and How We Use It</h3>
     <p>To provide our services, we may process the following information:</p>
     <ul>
-        <li><strong>Device and Network Information:</strong> We need to access your device's IP address and network status to establish an HTTP server within the local network for other devices to access. This information is used locally only.</li>
-        <li><strong>App Crash and Performance Logs:</strong> We use <strong>Firebase Crashlytics</strong> and <strong>Firebase Analytics</strong> to collect anonymous crash reports and usage statistics (such as feature usage frequency) to help us fix bugs and improve app stability. These data do not contain your personally identifiable information or file contents.</li>
+        <li><strong>Device and Network Information (IP Address):</strong> We access your device's IP address to establish a local HTTP server. This IP address is processed locally on your device and may be visible to other devices on your local network that you share content with. <strong>We do not upload your IP address to our cloud servers.</strong> It is strictly used for local connection management.</li>
+        <li><strong>App Usage and Performance Data (Optional):</strong> With your explicit consent, we use <strong>Firebase Analytics</strong> and <strong>Crashlytics</strong> to collect anonymous usage statistics and crash reports. This helps us improve stability and user experience. You can opt-out of this collection at any time in the App Settings.</li>
         <li><strong>Transaction Information:</strong> If you purchase premium services, transactions are processed by <strong>Google Play</strong>. We only receive transaction receipts (e.g., order numbers, subscription status) and do not have access to sensitive payment information such as your bank card numbers.</li>
     </ul>
 
-    <h2>3. Permissions Usage</h2>
-    <p>The App requests the following permissions only when necessary for core functionality:</p>
+    <h3>3. GDPR (General Data Protection Regulation) Notice</h3>
+    <p>For users in the European Economic Area (EEA) and UK:</p>
     <ul>
-        <li><strong>Camera:</strong> Required for the "Camera Stream" feature, allowing you to stream your device's camera feed to other devices on your local network in real-time. We do not record or save your camera data.</li>
-        <li><strong>Microphone:</strong> Required for the "Camera Stream" feature if you choose to stream audio along with video.</li>
-        <li><strong>Storage (Photos/Media/Files):</strong> Required to allow you to select files to share and to save files received from other devices.</li>
-        <li><strong>Notifications:</strong> Used to show the server running status and upload progress in the notification bar, ensuring the service keeps running in the background.</li>
-        <li><strong>Foreground Service & Screen Recording:</strong> Used for screen casting feature to capture screen content and stream it to connected devices.</li>
-        <li><strong>Location / Nearby Devices:</strong> Required only to configure the local hotspot or manage Wi-Fi connections (depending on Android version). We do not collect or track your geographical location.</li>
+        <li><strong>Legal Basis:</strong> We process your personal data based on your consent (for analytics/crash reporting) and for the performance of a contract (providing the file sharing service).</li>
+        <li><strong>Your Rights:</strong> You have the right to access, correct, delete, or restrict processing of your personal data. You may withdraw your consent for analytics at any time in the app settings.</li>
+        <li><strong>Data Retention:</strong> Analytics data is retained for 14 months. Local connection logs are temporary and cleared when the server stops or after a short period (e.g., 5 minutes).</li>
+        <li><strong>International Transfers:</strong> Firebase services may process data in the United States under standard contractual clauses or other lawful mechanisms.</li>
     </ul>
 
-    <h2>4. Third-Party Services</h2>
-    <p>The App integrates the following third-party services, which may have their own privacy policies:</p>
+    <h3>4. CCPA/CPRA (California Privacy Rights) Notice</h3>
+    <p>For California residents:</p>
     <ul>
-        <li><strong>Google Firebase:</strong> Used for crash analysis and data statistics. <a href="https://firebase.google.com/support/privacy">View Privacy Policy</a></li>
+        <li><strong>We Do Not Sell Your Personal Information.</strong> We do not sell your personal information to third parties.</li>
+        <li><strong>We Do Not Share Your Personal Information</strong> for cross-context behavioral advertising.</li>
+        <li><strong>Your Rights:</strong> You have the right to request access to and deletion of your personal information, and the right to non-discrimination for exercising these rights.</li>
+    </ul>
+
+    <h3>5. Permissions Usage</h3>
+    <p>The App requests permissions (Camera, Storage, Notifications, Location/Nearby Devices) only when necessary for core functionality. Location permission is solely used for local hotspot/Wi-Fi management and not for tracking your geographical location.</p>
+
+    <h3>6. Third-Party Services</h3>
+    <ul>
+        <li><strong>Google Firebase:</strong> Used for crash analysis and data statistics (only with consent). <a href="https://firebase.google.com/support/privacy">View Privacy Policy</a></li>
         <li><strong>Google Play Services:</strong> Used for app distribution and billing settlement. <a href="https://policies.google.com/privacy">View Privacy Policy</a></li>
     </ul>
 
-    <h2>5. Data Security</h2>
-    <p>We take reasonable security measures to protect your data. Local network transmission supports access token verification mechanisms to prevent unauthorized devices from accessing your files.</p>
+    <h2 id="zh">中文版 (Chinese Version)</h2>
+    
+    <h3>1. 核心承诺：本地优先</h3>
+    <p>LocalHub 是一款局域网文件共享工具。<strong>您的文件、照片、视频等数据仅存储在本地设备，绝不会被我们上传到云端服务器。</strong></p>
 
-    <h2>6. Children's Privacy</h2>
-    <p>The App is not designed for children under the age of 13, and we do not knowingly collect personal information from children.</p>
+    <h3>2. 信息收集与使用</h3>
+    <ul>
+        <li><strong>IP 地址与网络信息：</strong> 我们获取您的设备 IP 地址用于建立局域网服务器。该 IP 仅在本地处理，用于连接管理，<strong>绝不会上传至我们的云端服务器</strong>。</li>
+        <li><strong>应用分析与崩溃报告（可选）：</strong> 仅在您明确同意的情况下，我们会使用 <strong>Firebase</strong> 收集匿名的崩溃报告和使用统计，以改进应用稳定性。您随时可以在设置中关闭此功能。</li>
+        <li><strong>交易信息：</strong> Google Play 处理支付，我们仅接收订单状态，不接触银行卡信息。</li>
+    </ul>
 
-    <h2>7. Policy Updates</h2>
-    <p>We may update this Privacy Policy from time to time. Updated versions will be published within the App. Continued use of the App indicates your agreement to be bound by the revised policy.</p>
+    <h3>3. 用户权利与数据保护</h3>
+    <ul>
+        <li><strong>选择权：</strong> 您可以完全控制是否开启分析统计功能。</li>
+        <li><strong>数据保留：</strong> 分析数据（如有）保留 14 个月；本地连接日志仅在运行时临时存储。</li>
+        <li><strong>未成年人保护：</strong> 本应用不面向 13 岁以下儿童。</li>
+    </ul>
+
+    <h3>4. 权限使用</h3>
+    <p>我们仅在必要时请求权限（如相机、存储、通知、位置/附近设备）。位置权限仅用于局域网/热点功能，不用于地理位置追踪。</p>
 
     <div class="contact">
-        <h2>8. Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy, please contact the developer:</p>
+        <h2>Contact Us / 联系我们</h2>
         <p>Email: <a href="mailto:aimeestepito@gmail.com">aimeestepito@gmail.com</a></p>
     </div>
 </body>
