@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://baronleeee.github.io/localhub-website/sitemap.xml
