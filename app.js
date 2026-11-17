@@ -3,12 +3,12 @@
   const languageSwitch = document.querySelector("[data-language-switch]");
   const translatedNodes = document.querySelectorAll("[data-en][data-zh]");
   const titleByLanguage = {
-    en: "LocalHub — Share from Android to any browser",
-    zh: "LocalHub — 从 Android 分享到任意浏览器"
+    en: "LocalHub — Share from Android to a compatible browser",
+    zh: "LocalHub — 从 Android 分享到兼容浏览器"
   };
   const descriptionByLanguage = {
-    en: "Turn your Android device into a private local sharing hub. Send files, stream media, or share your screen to any browser—no receiver app or cloud upload required.",
-    zh: "把 Android 设备变成私密的局域网共享中心，向任意浏览器传文件、播放媒体或共享屏幕；接收端无需安装，也无需上传云端。"
+    en: "Turn your Android device into a private local sharing hub. Send files, stream media, or share your screen to a compatible browser—no receiver app or cloud upload required.",
+    zh: "把 Android 设备变成私密的局域网共享中心，向兼容浏览器传文件、播放媒体或共享屏幕；接收端无需安装，也无需上传云端。"
   };
 
   const applyLanguage = (language) => {

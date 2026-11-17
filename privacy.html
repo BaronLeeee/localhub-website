@@ -17,7 +17,7 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p><strong>Effective Date:</strong> August 3, 2026</p>
+    <p><strong>Last Updated:</strong> October 22, 2026</p>
     
     <p>This Privacy Policy applies to the "LocalHub" application (hereinafter referred to as "the App") developed by independent developer Baron Lee. We value your privacy, and this policy aims to explain how we collect, use, and protect your information.</p>
 
@@ -28,16 +28,15 @@
     <h2 id="en">English Version</h2>
     
     <h3>1. Core Commitment: Local First</h3>
-    <p>LocalHub is a tool for sharing files and media over a local network. <strong>Unless you actively choose to do so (e.g., sharing a link with others), your files, photos, videos, and other personal data are stored only on your local device and will never be uploaded to any cloud servers by us.</strong></p>
+    <p>LocalHub shares files and media between your devices. <strong>Local file transfers do not use our cloud file storage.</strong> Optional usage statistics, crash reports, and Google Play billing use separate online services as described below.</p>
 
     <h3>2. Information We Collect and How We Use It</h3>
     <p>To provide our services, we may process the following information:</p>
     <ul>
-        <li><strong>Device and Network Information (IP Address):</strong> We access your device's IP address to establish a local HTTP server. This IP address is processed locally on your device and may be visible to other devices on your local network that you share content with. <strong>We do not upload your IP address to our cloud servers.</strong> It is strictly used for local connection management.</li>
-        <li><strong>App Usage and Performance Data (Optional):</strong> With your explicit consent, we use <strong>Firebase Analytics</strong> and <strong>Crashlytics</strong> to collect anonymous usage statistics and crash reports. This helps us improve stability and user experience. You can opt-out of this collection at any time in the App Settings.</li>
+        <li><strong>Device and Network Information:</strong> LocalHub uses your local IP address to establish its sharing server; connected devices can see that address. Local IP addresses are not included in our custom analytics event parameters. Optional online services involve network connections whose providers may process IP addresses. Google Analytics can use an IP address to derive approximate location before discarding it; the App does not collect precise GPS location for analytics. <a href="https://support.google.com/analytics/answer/11598602">Google Analytics regional data collection</a></li>
+        <li><strong>App Usage and Performance Data (Optional):</strong> With your explicit consent, release builds use <strong>Firebase Analytics</strong> and <strong>Crashlytics</strong> for usage statistics and crash diagnostics. Data can include installation and session identifiers, device and system information, app versions, feature events, transfer byte counts, error details and diagnostic logs. These identifiers support event and crash deduplication and can link reports from the same installation. We do not send shared file contents as analytics event parameters. You can disable future collection in App Settings; disabling collection does not itself delete reports already received by the provider.</li>
         <li><strong>Install Attribution (Optional):</strong> With the same analytics consent, the App reads Google Play install attribution once and sends only normalized campaign fields (source, medium, campaign, and content) to Firebase Analytics. The raw referrer and advertising click identifiers are not stored or uploaded by the App.</li>
-        <li><strong>Transaction Information:</strong> If you purchase premium services, transactions are processed by <strong>Google Play</strong>. We only receive transaction receipts (e.g., order numbers, subscription status) and do not have access to sensitive payment information such as your bank card numbers.</li>
-        <li><strong>Subscription Verification (Premium):</strong> To verify premium subscription status, the App may send limited billing data (such as your Google Play purchase token, package name, and product ID) to our verification service hosted on AWS. This data is used only for entitlement verification and is not used for advertising.</li>
+        <li><strong>Transaction Information:</strong> Premium is currently a one-time purchase processed by <strong>Google Play</strong>. The App receives purchase records, product IDs, purchase tokens and entitlement status, and acknowledges purchases through Google Play Billing. We do not receive bank card details.</li>
     </ul>
 
     <h3>3. GDPR (General Data Protection Regulation) Notice</h3>
@@ -45,7 +44,7 @@
     <ul>
         <li><strong>Legal Basis:</strong> We process your personal data based on your consent (for analytics/crash reporting) and for the performance of a contract (providing the file sharing service).</li>
         <li><strong>Your Rights:</strong> You have the right to access, correct, delete, or restrict processing of your personal data. You may withdraw your consent for analytics at any time in the app settings.</li>
-        <li><strong>Data Retention:</strong> Analytics data is retained for 14 months. Local connection logs are temporary and cleared when the server stops or after a short period (e.g., 5 minutes).</li>
+        <li><strong>Data Retention:</strong> Usage statistics follow the retention settings of our Google Analytics property and applicable service rules. You can contact us to ask about the current setting or request deletion. Firebase states that Crashlytics normally retains crash traces and associated identifiers for 90 days before beginning removal from live and backup systems. Local connection state is cleared when the server stops; received files remain on your device until deleted. <a href="https://firebase.google.com/support/privacy">Firebase data and retention information</a></li>
         <li><strong>International Transfers:</strong> Firebase services may process data in the United States under standard contractual clauses or other lawful mechanisms.</li>
     </ul>
 
@@ -64,27 +63,25 @@
     <ul>
         <li><strong>Google Firebase:</strong> Used for crash analysis and data statistics (only with consent). <a href="https://firebase.google.com/support/privacy">View Privacy Policy</a></li>
         <li><strong>Google Play Services:</strong> Used for app distribution, billing settlement, and consent-gated install attribution. <a href="https://policies.google.com/privacy">View Privacy Policy</a></li>
-        <li><strong>AWS (Subscription Verification):</strong> Used to verify subscription status when you use premium billing features.</li>
     </ul>
 
     <h2 id="zh">中文版 (Chinese Version)</h2>
     
     <h3>1. 核心承诺：本地优先</h3>
-    <p>LocalHub 是一款局域网文件共享工具。<strong>您的文件、照片、视频等数据仅存储在本地设备，绝不会被我们上传到云端服务器。</strong></p>
+    <p>LocalHub 用于在你的设备之间共享文件和媒体。<strong>局域网文件传输不使用我们的云端文件存储。</strong>可选使用统计、崩溃报告和 Google Play 计费会使用下述独立在线服务。</p>
 
     <h3>2. 信息收集与使用</h3>
     <ul>
-        <li><strong>IP 地址与网络信息：</strong> 我们获取您的设备 IP 地址用于建立局域网服务器。该 IP 仅在本地处理，用于连接管理，<strong>绝不会上传至我们的云端服务器</strong>。</li>
-        <li><strong>应用分析与崩溃报告（可选）：</strong> 仅在您明确同意的情况下，我们会使用 <strong>Firebase</strong> 收集匿名的崩溃报告和使用统计，以改进应用稳定性。您随时可以在设置中关闭此功能。</li>
+        <li><strong>设备与网络信息：</strong> LocalHub 使用局域网 IP 建立共享服务器，已连接设备可以看到该地址。我们的自定义分析事件参数不包含局域网 IP。可选在线服务涉及网络连接，其提供方可能处理 IP 地址；Google Analytics 可先据此推导大致位置，再丢弃 IP。应用不为分析采集精确 GPS 位置。<a href="https://support.google.com/analytics/answer/11598602">Google Analytics 区域数据说明</a></li>
+        <li><strong>应用分析与崩溃报告（可选）：</strong> 经你明确同意后，正式版使用 <strong>Firebase Analytics</strong> 与 <strong>Crashlytics</strong> 处理使用统计和稳定性诊断。数据可能包含安装及会话标识、设备与系统信息、应用版本、功能事件、传输字节数、错误详情和诊断日志；标识用于事件及崩溃去重，能够关联同一次安装的报告。共享文件内容不作为分析事件参数发送。你可以在应用设置中关闭后续收集；关闭收集本身不会删除提供方已经接收的报告。</li>
         <li><strong>安装来源归因（可选）：</strong> 在同一分析统计授权下，应用仅会读取一次 Google Play 安装来源，并向 Firebase Analytics 发送规范化后的渠道字段（来源、媒介、活动和素材）。应用不会保存或上传原始 referrer 与广告点击标识符。</li>
-        <li><strong>交易信息：</strong> Google Play 处理支付，我们仅接收订单状态，不接触银行卡信息。</li>
-        <li><strong>订阅校验（高级功能）：</strong> 为确认订阅状态，应用可能会向我们部署在 AWS 上的校验服务发送有限的计费数据（例如 Google Play purchase token、包名、产品 ID）。该数据仅用于权限校验，不用于广告用途。</li>
+        <li><strong>交易信息：</strong> 当前 Premium 为 Google Play 一次性买断。应用接收购买记录、商品 ID、purchase token 和权益状态，并通过 Google Play Billing 确认购买，不接触银行卡信息。</li>
     </ul>
 
     <h3>3. 用户权利与数据保护</h3>
     <ul>
         <li><strong>选择权：</strong> 您可以完全控制是否开启分析统计功能。</li>
-        <li><strong>数据保留：</strong> 分析数据（如有）保留 14 个月；本地连接日志仅在运行时临时存储。</li>
+        <li><strong>数据保留：</strong> 使用统计按 Google Analytics 项目的保留设置及服务规则处理；你可以联系我们查询当前设置或申请删除。Firebase 说明 Crashlytics 通常保留崩溃堆栈及关联标识 90 天后，开始从在线及备份系统移除。本地连接状态在服务停止时清空，已接收的文件仍保留在设备上，直到删除。<a href="https://firebase.google.com/support/privacy">Firebase 数据与保留说明</a></li>
         <li><strong>未成年人保护：</strong> 本应用不面向 13 岁以下儿童。</li>
     </ul>
 

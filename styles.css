@@ -38,7 +38,6 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-body,
 button {
   font-family: inherit;
 }
@@ -359,6 +358,12 @@ a {
 
 .hero h1 .accent {
   color: var(--forest-2);
+}
+
+html[lang="zh-CN"] .hero h1 {
+  font-size: clamp(48px, 4.8vw, 72px);
+  letter-spacing: -.045em;
+  line-height: 1.12;
 }
 
 .hero-lede {
@@ -1372,6 +1377,10 @@ a {
     font-size: clamp(56px, 9vw, 78px);
   }
 
+  html[lang="zh-CN"] .hero h1 {
+    font-size: clamp(40px, 8vw, 72px);
+  }
+
   .hero-lede {
     margin-right: auto;
     margin-left: auto;
@@ -1473,6 +1482,10 @@ a {
   .hero h1 {
     font-size: clamp(45px, 14vw, 62px);
     line-height: 1;
+  }
+
+  html[lang="zh-CN"] .hero h1 {
+    font-size: clamp(32px, 8.5vw, 62px);
   }
 
   .eyebrow {
@@ -1610,15 +1623,13 @@ a {
     font-size: 30px;
   }
 
-  .feature-mint {
-    padding-bottom: 265px;
-  }
-
   .transfer-ui {
-    position: absolute;
-    right: 12px;
-    bottom: 18px;
-    left: 12px;
+    position: relative;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    margin-top: 24px;
+    padding: 16px 0;
   }
 
   .feature-blue {
