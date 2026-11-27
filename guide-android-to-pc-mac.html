@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Transfer Files Between Android and PC or Mac Over Local Wi-Fi — LocalHub Guide</title>
+  <meta name="description" content="Step-by-step guide to transfer files between Android and a Windows PC or Mac over local Wi-Fi or hotspot using a browser—no cable, receiver app, or cloud account.">
+  <meta name="theme-color" content="#0b3b35">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://baronleeee.github.io/localhub-website/guide-android-to-pc-mac.html">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="styles.css?v=20261127a">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://baronleeee.github.io/localhub-website/guide-android-to-pc-mac.html">
+  <meta property="og:title" content="Transfer Files Between Android and PC or Mac Over Local Wi-Fi — LocalHub">
+  <meta property="og:description" content="Send files between Android and Windows or Mac through a local browser with no cable or receiver app.">
+  <meta property="og:image" content="https://baronleeee.github.io/localhub-website/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Transfer Files Between Android and PC or Mac Over Local Wi-Fi — LocalHub">
+  <meta name="twitter:description" content="Send files between Android and Windows or Mac through a local browser with no cable or receiver app.">
+  <meta name="twitter:image" content="https://baronleeee.github.io/localhub-website/images/og-image.png">
+</head>
+<body
+  data-title-en="Transfer Files Between Android and PC or Mac Over Local Wi-Fi — LocalHub Guide"
+  data-title-zh="Android 与 PC / Mac 局域网浏览器传文件教程 — LocalHub"
+  data-desc-en="Step-by-step guide to transfer files between Android and a Windows PC or Mac over local Wi-Fi or hotspot using a browser—no cable, receiver app, or cloud account."
+  data-desc-zh="一步步在局域网或热点下用浏览器实现 Android 与 Windows PC、Mac 双向传文件：无需数据线、无需电脑端安装软件、无需云盘账号。">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="shell nav">
+      <a class="brand" href="index.html" aria-label="LocalHub home">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="images/favicon.png" alt="" width="512" height="512">
+        </span>
+        <span>LocalHub</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#how" data-en="How it works" data-zh="使用方式">How it works</a>
+        <a href="index.html#features" data-en="Features" data-zh="核心功能">Features</a>
+        <a href="guide-android-to-pc-mac.html" aria-current="page" data-en="PC/Mac Guide" data-zh="电脑互传教程">PC/Mac Guide</a>
+        <a href="privacy.html" data-en="Privacy" data-zh="隐私政策">Privacy</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="language-switch" type="button" data-language-switch aria-label="切换到中文">中文</button>
+        <a class="button button-small button-dark play-link" href="https://play.google.com/store/apps/details?id=com.toolcraft.localhub&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dguide%26utm_campaign%3Dstage3_android_pc_mac_files%26utm_content%3Dguide_header" target="_blank" rel="noopener noreferrer">
+          <span data-en="Get the app" data-zh="获取应用">Get the app</span>
+          <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M4 10h11M11 6l4 4-4 4"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="guide-hero">
+      <div class="shell guide-shell">
+        <p class="section-kicker" data-en="PC &amp; Mac File Transfer Guide" data-zh="PC / Mac 局域网传文件教程">PC &amp; Mac File Transfer Guide</p>
+        <h1 class="guide-title" data-en="Transfer files between Android and PC or Mac in your browser." data-zh="用浏览器在 Android 与 PC / Mac 间直接传文件。">Transfer files between Android and PC or Mac in your browser.</h1>
+        <p class="guide-lede" data-en="Install LocalHub only on your Android phone or tablet. Open the local address in Chrome, Edge, or Safari on Windows or macOS to send and download files directly over your local network." data-zh="只需在 Android 手机或平板安装 LocalHub；在 Windows 或 macOS 上打开 Chrome、Edge 或 Safari 输入局域网地址，即可在局域网内双向收发文件，无需安装电脑客户端或登录云盘。">
+          Install LocalHub only on your Android phone or tablet. Open the local address in Chrome, Edge, or Safari on Windows or macOS to send and download files directly over your local network.
+        </p>
+        <div class="guide-actions">
+          <a class="button button-primary play-link" href="https://play.google.com/store/apps/details?id=com.toolcraft.localhub&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dguide%26utm_campaign%3Dstage3_android_pc_mac_files%26utm_content%3Dguide_hero" target="_blank" rel="noopener noreferrer">
+            <svg class="play-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M4.2 3.5v17l10.2-8.5L4.2 3.5Z"/><path d="m14.4 12 3.1-2.6M14.4 12l3.1 2.6M4.2 3.5l13.3 5.9M4.2 20.5l13.3-5.9"/></svg>
+            <span>
+              <small data-en="Download on" data-zh="前往下载">Download on</small>
+              <strong>Google Play</strong>
+            </span>
+          </a>
+          <a class="text-link" href="#troubleshooting">
+            <span data-en="Jump to troubleshooting" data-zh="查看连接失败排查">Jump to troubleshooting</span>
+            <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M4 10h11M11 6l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section guide-section">
+      <div class="shell guide-shell">
+        <div class="guide-card guide-notice">
+          <h2 data-en="Before you start: network requirements" data-zh="开始前确认：网络前提与安全边界">Before you start: network requirements</h2>
+          <ul class="guide-list">
+            <li data-en="Connect your Android device and Windows PC or Mac to the same Wi-Fi network, or connect the computer to your phone's temporary hotspot." data-zh="将 Android 设备与 Windows PC 或 Mac 连接到同一个 Wi-Fi，或让电脑连接手机开启的临时热点。">Connect your Android device and Windows PC or Mac to the same Wi-Fi network, or connect the computer to your phone's temporary hotspot.</li>
+            <li data-en="Make sure the router allows local device-to-device access. Public, hotel, campus, or guest Wi-Fi networks often enable AP/client isolation that blocks local connections." data-zh="确保路由器允许局域网设备互通。酒店、校园或公司访客 Wi-Fi 常开启 AP / 客户端隔离，会阻止设备间直连。">Make sure the router allows local device-to-device access. Public, hotel, campus, or guest Wi-Fi networks often enable AP/client isolation that blocks local connections.</li>
+            <li data-en="Use only on a trusted local network. Local HTTP traffic is not encrypted, even when an optional access password is enabled." data-zh="仅在可信局域网内使用。本地 HTTP 传输不加密，开启可选访问密码仅用于访问控制，不提供链路加密。">Use only on a trusted local network. Local HTTP traffic is not encrypted, even when an optional access password is enabled.</li>
+          </ul>
+        </div>
+
+        <div class="guide-grid">
+          <article class="guide-card">
+            <span class="step-number">01</span>
+            <h2 data-en="Start sharing on Android" data-zh="第一步：在 Android 上启动共享">Start sharing on Android</h2>
+            <p data-en="Open LocalHub and tap Start Sharing. Fresh installs keep sharing off until you start it manually. LocalHub displays your active local URL (for example, http://192.168.1.10:9091—always use the address shown in the app)." data-zh="打开 LocalHub 并点击「开始共享」（新安装默认不会自动启动服务）。启动后界面会显示当前有效的局域网地址（例如 http://192.168.1.10:9091，具体 IP 与端口请以应用实际显示为准）。">Open LocalHub and tap Start Sharing. Fresh installs keep sharing off until you start it manually. LocalHub displays your active local URL (for example, http://192.168.1.10:9091—always use the address shown in the app).</p>
+          </article>
+
+          <article class="guide-card">
+            <span class="step-number">02</span>
+            <h2 data-en="Open the URL on PC or Mac" data-zh="第二步：在 PC 或 Mac 浏览器打开地址">Open the URL on PC or Mac</h2>
+            <p data-en="Type the local address into Chrome, Edge, or Safari on your computer. No receiver app or login is required. If you enabled an access password in LocalHub Settings, enter it when prompted." data-zh="在电脑上的 Chrome、Edge 或 Safari 地址栏输入该局域网地址，接收端无需安装软件或登录账号。若你在 LocalHub 设置中开启了访问密码，在浏览器提示框中输入对应密码即可。">Type the local address into Chrome, Edge, or Safari on your computer. No receiver app or login is required. If you enabled an access password in LocalHub Settings, enter it when prompted.</p>
+          </article>
+
+          <article class="guide-card">
+            <span class="step-number">03</span>
+            <h2 data-en="Send files in both directions" data-zh="第三步：双向发送与下载文件">Send files in both directions</h2>
+            <p data-en="Computer to Android: drag and drop or pick files on the web page—saved files appear in File Management and Downloads/LocalHub. Android to Computer: import or share files into LocalHub (or Media Library), then click Download directly in your desktop browser." data-zh="电脑传手机：在网页中拖拽或点击选择文件上传，接收的文件保存在「文件管理」与手机下载目录。手机传电脑：在 LocalHub 导入文件（或加入媒体库）后，在电脑浏览器列表中直接点击下载。">Computer to Android: drag and drop or pick files on the web page—saved files appear in File Management and Downloads/LocalHub. Android to Computer: import or share files into LocalHub (or Media Library), then click Download directly in your desktop browser.</p>
+          </article>
+
+          <article class="guide-card">
+            <span class="step-number">04</span>
+            <h2 data-en="Stop sharing when finished" data-zh="第四步：传输完成后随时停止">Stop sharing when finished</h2>
+            <p data-en="Tap Stop Sharing in the app (or let the auto-stop timer expire). Stopping immediately closes the local server port and ends browser access." data-zh="传输结束后点击「停止共享」（或等待自动停止倒计时结束），本地端口会立即关闭，浏览器将无法继续访问。">Tap Stop Sharing in the app (or let the auto-stop timer expire). Stopping immediately closes the local server port and ends browser access.</p>
+          </article>
+        </div>
+
+        <div class="guide-card">
+          <h2 data-en="Free vs. one-time Premium limits" data-zh="免费版与一次性买断 Premium 的区别">Free vs. one-time Premium limits</h2>
+          <div class="guide-compare">
+            <div>
+              <h3 data-en="Free" data-zh="免费版">Free</h3>
+              <ul class="guide-list">
+                <li data-en="Two-way local file transfer through a compatible browser" data-zh="通过兼容浏览器进行局域网双向传文件">Two-way local file transfer through a compatible browser</li>
+                <li data-en="Single-file browser upload and media import up to 50 MiB per file" data-zh="浏览器上传与媒体导入单个文件上限 50 MiB">Single-file browser upload and media import up to 50 MiB per file</li>
+                <li data-en="Browse, play, and individually download shared media in your browser" data-zh="在浏览器中浏览、播放和单个下载手机媒体">Browse, play, and individually download shared media in your browser</li>
+              </ul>
+            </div>
+            <div>
+              <h3 data-en="Premium (one-time purchase)" data-zh="Premium（一次性买断）">Premium (one-time purchase)</h3>
+              <ul class="guide-list">
+                <li data-en="Larger file uploads beyond the 50 MiB free limit" data-zh="解除单个文件 50 MiB 的免费大小限制">Larger file uploads beyond the 50 MiB free limit</li>
+                <li data-en="WebRTC screen and camera live streaming to nearby browsers" data-zh="向附近兼容浏览器实时共享屏幕或摄像头（WebRTC）">WebRTC screen and camera live streaming to nearby browsers</li>
+                <li data-en="Cross-device text sharing, custom access password, custom port, and batch media ZIP download" data-zh="跨设备文字互传、自定义访问密码、自定义端口与媒体批量 ZIP 下载">Cross-device text sharing, custom access password, custom port, and batch media ZIP download</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="guide-card" id="troubleshooting">
+          <h2 data-en="Troubleshooting connection issues" data-zh="常见连接与传输失败排查">Troubleshooting connection issues</h2>
+          <dl class="guide-faq">
+            <dt data-en="The browser cannot open the local address (timeout or unreachable)" data-zh="电脑浏览器打不开局域网地址（超时或无法访问）">The browser cannot open the local address (timeout or unreachable)</dt>
+            <dd data-en="Confirm LocalHub shows Online and both devices are on the exact same Wi-Fi (not Guest Wi-Fi or cellular data). Temporarily pause VPNs on either device. If your router enforces AP isolation, switch to Android's local hotspot and reconnect the PC/Mac." data-zh="先确认 LocalHub 处于「在线」状态，且手机与电脑连接的是同一 Wi-Fi（未误连访客网或蜂窝数据）；请先暂停两端 VPN。若路由器开启了客户端隔离，可改用手机本地热点并让电脑连接该热点。">Confirm LocalHub shows Online and both devices are on the exact same Wi-Fi (not Guest Wi-Fi or cellular data). Temporarily pause VPNs on either device. If your router enforces AP isolation, switch to Android's local hotspot and reconnect the PC/Mac.</dd>
+
+            <dt data-en="The browser forced HTTPS and failed to load" data-zh="浏览器自动跳转 HTTPS 导致无法打开">The browser forced HTTPS and failed to load</dt>
+            <dd data-en="LocalHub runs a local HTTP server. Make sure the address bar starts with http:// (not https://) and includes the exact port number shown in LocalHub." data-zh="LocalHub 运行的是本地 HTTP 服务。请核对地址栏以 http:// 开头（而非 https://），并保留应用显示的完整端口号。">LocalHub runs a local HTTP server. Make sure the address bar starts with http:// (not https://) and includes the exact port number shown in LocalHub.</dd>
+
+            <dt data-en="Access password was changed while a browser tab was already open" data-zh="浏览器页面打开期间在手机端修改了访问密码">Access password was changed while a browser tab was already open</dt>
+            <dd data-en="Existing protected requests with the old password return 401. Use the on-page Retry / Play / Select action to enter the new password without needing to restart LocalHub." data-zh="主机改密即时生效，旧密码发起的新受保护请求会返回 401。在原页面点击重试（Retry）、播放或文件操作入口重新输入新密码即可恢复，无需重启服务。">Existing protected requests with the old password return 401. Use the on-page Retry / Play / Select action to enter the new password without needing to restart LocalHub.</dd>
+
+            <dt data-en="Upload rejected for a large file" data-zh="上传较大文件时被拒绝">Upload rejected for a large file</dt>
+            <dd data-en="Free tier uploads are capped at 50 MiB per file. Check available storage space on Android, or unlock Premium if you need larger transfers." data-zh="免费版单个文件上限为 50 MiB。请检查手机可用存储空间；如需传输超过 50 MiB 的单文件，可在应用内解锁一次性 Premium。">Free tier uploads are capped at 50 MiB per file. Check available storage space on Android, or unlock Premium if you need larger transfers.</dd>
+          </dl>
+        </div>
+
+        <div class="guide-cta-box">
+          <div>
+            <h2 data-en="Ready to try local file transfer?" data-zh="准备好体验局域网免安装传文件了吗？">Ready to try local file transfer?</h2>
+            <p data-en="Install LocalHub on Android 8.0+ and open it from your PC or Mac browser." data-zh="在 Android 8.0+ 设备安装 LocalHub，用电脑浏览器即可开始传输。">Install LocalHub on Android 8.0+ and open it from your PC or Mac browser.</p>
+          </div>
+          <a class="button button-primary play-link" href="https://play.google.com/store/apps/details?id=com.toolcraft.localhub&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dguide%26utm_campaign%3Dstage3_android_pc_mac_files%26utm_content%3Dguide_footer" target="_blank" rel="noopener noreferrer">
+            <svg class="play-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M4.2 3.5v17l10.2-8.5L4.2 3.5Z"/><path d="m14.4 12 3.1-2.6M14.4 12l3.1 2.6M4.2 3.5l13.3 5.9M4.2 20.5l13.3-5.9"/></svg>
+            <span><small data-en="Download on" data-zh="前往下载">Download on</small><strong>Google Play</strong></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html" aria-label="LocalHub home">
+          <span class="brand-mark" aria-hidden="true"><img src="images/favicon.png" alt="" width="512" height="512"></span>
+          <span>LocalHub</span>
+        </a>
+        <p data-en="Share locally. Open anywhere." data-zh="本地共享，处处可用。">Share locally. Open anywhere.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h3 data-en="Product" data-zh="产品">Product</h3>
+          <a href="index.html#how" data-en="How it works" data-zh="使用方式">How it works</a>
+          <a href="index.html#features" data-en="Features" data-zh="核心功能">Features</a>
+          <a href="guide-android-to-pc-mac.html" data-en="PC/Mac file transfer guide" data-zh="PC/Mac 传文件教程">PC/Mac file transfer guide</a>
+        </div>
+        <div>
+          <h3 data-en="Legal" data-zh="法律信息">Legal</h3>
+          <a href="privacy.html" data-en="Privacy policy" data-zh="隐私政策">Privacy policy</a>
+          <a href="terms.html" data-en="Terms of service" data-zh="服务条款">Terms of service</a>
+          <a href="open-source.html" data-en="Open-source licenses" data-zh="开源组件许可">Open-source licenses</a>
+        </div>
+        <div>
+          <h3 data-en="Support" data-zh="支持">Support</h3>
+          <a href="mailto:aimeestepito@gmail.com">aimeestepito@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="shell footer-bottom">
+      <span>© 2026 LocalHub. All rights reserved.</span>
+      <span data-en="Made for the local network." data-zh="为局域网而生。">Made for the local network.</span>
+    </div>
+  </footer>
+
+  <script src="app.js?v=20261127a" defer></script>
+</body>
+</html>
